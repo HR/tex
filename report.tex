@@ -1,0 +1,52 @@
+\documentclass[a4paper]{article}
+
+\usepackage{graphicx, verbatim, listings, fancyvrb, color, float, pdfpages}
+
+% Definitions %
+\newcommand{\quotes}[1]{``#1''}
+% Shrug %
+\def\shrug{\texttt{\raisebox{0.75em}{\char`\_}\char`\\\char`\_\kern-0.5ex(\kern-0.25ex\raisebox{0.25ex}{\rotatebox{45}{\raisebox{-.75ex}"\kern-1.5ex\rotatebox{-90})}}\kern-0.5ex)\kern-0.5ex\char`\_/\raisebox{0.75em}{\char`\_}}}
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\graphicspath{figures}
+
+% Syntax highlighting %
+\lstset{
+backgroundcolor=\color{white}, % choose the background color
+basicstyle=\footnotesize\ttfamily, % size of fonts used for the code
+captionpos=b, % sets the caption-position to bottom
+commentstyle=\color{mygreen}, % comment style
+escapeinside={\%*}{*)}, % if you want to add LaTeX within your Code
+showspaces=false, % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+showstringspaces=false, % underline spaces within strings only
+extendedchars=true, % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+breaklines=true, % sets automatic line breaking
+keywordstyle=\color{blue}, % keyword style
+stringstyle=\color{mymauve}, % string literal style
+}
+
+
+\title{\Huge{TITLE}\\\vspace{0.35em}\large{MODULE}}
+\author{
+Habib Rehman\\
+\texttt{1748869}\\
+\texttt{K1763960}
+}
+\date{DATE}
+
+
+\begin{document}
+% Title page %
+\maketitle
+\newpage
+% Start of body %
+\section{SECTION}
+\shrug
+
+% End of body %
+\appendix
+\section{Appendix}
+
+\end{document}
